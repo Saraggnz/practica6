@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <!-- Añadimos el link de los estilos para que se apliquen  -->
+<link rel="stylesheet" href="estilos.css">
+
+<head>
+    <title>formulari</title>
+</head>
+
+<body>
+    <!-- Ponemos el titulo de la pagina con un "h1"-->
+    <h1> Mi primer formulario</h1>
+    <!--Pedimos datos personales -->
+    <h5> Tus datos personales:</h5>
+    <!--Iniciamos el formulario -->
+    <form>
+        <!-- Creamos las cajas donde se pediran "Nombre, Apellido y Edad"  -->
+        <label for="fname">Nombre:</label>
+        <input type="text" id="fname" name="fname" style="width:200px">
+        <label for="lname">Apellido:</label>
+        <input type="text" id="lname" name="lname" style="width:200px"><br><br>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" style="width:300px">
+
+        <!-- Con un "h5" pedimos los siguientes datos  -->
+        <h5> Marca los lenguajes de programación que mas te gusten:</h5>
+
+        <!--  Creamos los botones para crear las 3 respuestas posibles. Usamos "checkbox" para que sean cuadrados y podamos seleccionar mas de uno-->
+        <input type="checkbox" id="html" name="lenguaje" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="lenguaje" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="xml" name="lenguaje" value="xml">
+        <label for="xml">XML</label>
+
+        <!-- Pedimos el siguiente dato  -->
+        <h5>Selecciona el ciclo formativo que quieres hacer:</h5>
+
+        <!-- Creamos 3 opciones de respuesta con "radio" que nos dará un boton de seleccion redondo -->
+        <input type="radio" id="asix" name="ciclo" value="asix">
+        <label for="asix">ASIX</label><br>
+        <input type="radio" id="dam" name="ciclo" value="dam">
+        <label for="dam">DAM</label><br>
+        <input type="radio" id="daw" name="ciclo" value="daw">
+        <label for="daw">DAW</label><br><br>
+
+        <!-- Pedimos que se seleccione el curso -->
+        <label for="curso">Selecciona el curso:</label>
+        <!-- Con el "select" se abrirá un desplegable con las opciones que ponemos  -->
+        <select id="curso" name="cursos">
+            <option value="primero">Primero</option>
+            <option value="segundo ">Segundo</option>
+        </select><br><br>
+
+        <!-- Creamos un area de texto con un mensaje para que el usuario escriba  -->
+        <textarea name="texto" rows="10" cols="30">
+        Escribe tu mensaje
+            </textarea> <br>
+
+        <!--  Creamos un boton para que cuando el usuario haga clic le lleve a la pagina del resultado -->
+        <a href="result.html">
+            <input type="button" value="Enviar">
+        </a>
+
+    </form>
+</body>
+
+</html>
