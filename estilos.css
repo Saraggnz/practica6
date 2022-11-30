@@ -5,14 +5,17 @@ h1 {
     align-items: center;
     text-align: center;
     font-weight: bold;
+    font-family:Arial;
 }
 
 h5 {
     text-align: center;
     font-weight: bold;
     color: black;
+    font-family:Arial;
 }
 
 form {
     text-align: center;
+    font-family:Arial;
 }
